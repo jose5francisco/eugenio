@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Usuarios</title>
+    <script src="https://kit.fontawesome.com/04ce4bf1e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Imbue:wght@100&family=Open+Sans+Condensed:ital,wght@1,300&family=Rajdhani:wght@500&family=Saira+Condensed:wght@200&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="img/fondo.png" alt="">
+            <button type="button" class="switch-btn" onclick="location.reload()">Iniciar sesion</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            
+            
+            <form action="inicio.php" method="post">
+                <center><img src="img/Pastel.png" alt="" width="260"></center>
+                <input type="text" name="user-name" class="input-box" placeholder="Usuario">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contraseña">
+                <input type="submit" name="login-btn" class="btn" value="Ingresar">
+            </form>                 
+        </div>
+        
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="img/fondo.png" alt="">
+            <button type="button" class="switch-btn" onclick="switchSignup()">Registrarse</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <form action="registro.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre(s)">
+                <input type="text" name="user-apellido" class="input-box" placeholder="Apellido(s)">
+                <input type="email" name="email" class="input-box" placeholder="Correo">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contraseña">
+                <input type="password" name="confirmar" class="input-box" placeholder="Confirmar Contraseña">
+                <label for="poblacion" class="label" >Municipio</label>
+                <select name="poblacion" id="poblacion" class="option">
+                    <option >Garcia</option>
+                    <option >San Pedro</option>
+                    <option >Monterrey</option>
+                    <option>Apodaca</option>
+                    <option>Escobedo</option>
+                    <option>Santa catarina</option>
+                </select>
+                <li><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108399.007085941!2d-99.88735608000526!3d25.206837804758877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629584a2a5b05d%3A0x701df442c36cbbc6!2sNuevo%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1612485811072!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">otra area</a></li>
+                <textarea type="text" name="comentario" placeholder="dejanos tu opinion :)"></textarea>
+                <input type="radio" class="radio" >
+                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p><br><br>
+                <input type="submit" name="signup-btn" class="btn" value="Registrar">
+            </form>
+        </div>
+    </section>
+
+    <script src="js1/main.js"></script>
+
+</body>
+</html>
